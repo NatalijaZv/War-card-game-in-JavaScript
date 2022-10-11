@@ -1,0 +1,86 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-family: "Exo 2", sans-serif;
+}
+
+.container{
+    margin-top: 2em;
+    background-image: url("https://scrimba.com/blobs/sha1:31a52c065c4616d37388f3bfef788ebad1ee8644.png");
+    width:600px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid black;
+}
+
+.header{
+    align-self:flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button{
+    padding: 0.7em 1.5em;
+    margin-right: 3em;
+    color:black;
+    background-color: #FFF100;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* letter-spacing: 0.5px;
+     */
+}
+.deck-btn{
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+}
+.title{
+    margin-bottom: 0;
+}
+
+.remaining-cards{
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    margin: 0.3em 0;
+}
+.card-slot{
+    height:140px;
+    width:calc(140px*5/7);
+    border:2px solid black;
+    border-radius: 10px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.draw-btn{
+    margin-top: 0.5em;
+    align-self:stretch;
+    width: 100%;
+
+}
+button:disabled{
+    opacity: 0.5;
+    cursor:not-allowed;
+}
